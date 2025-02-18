@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tasty & Trails - Menu</title>
+    <style>
+      /* ====================== GLOBAL RESET ====================== */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Arial", sans-serif;
+        background-color: #f0f5f5; /* Light background */
+        color: #333;
+        line-height: 1.6;
+      }
+
+      /* ====================== HEADER ====================== */
+      header {
+        background-color: #07484a; /* Dark teal */
+        color: #fff;
+        padding: 1rem;
+        text-align: center;
+        font-size: 1.8rem;
+        font-weight: bold;
+        position: sticky;
+        top: 0;
+        z-index: 999;
+      }
+
+      /* ====================== MAIN CONTAINER ====================== */
+      main {
+        max-width: 1200px;
+        margin: 2rem auto;
+        padding: 0 1rem;
+      }
+
+      /* ====================== SECTION TITLES ====================== */
+      .menu-section {
+        margin-bottom: 3rem;
+      }
+      .menu-section h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        color: #07484a;
+        border-bottom: 4px solid #fdbb2d; /* Orange accent */
+        display: inline-block;
+        padding-bottom: 0.5rem;
+      }
+      .menu-section h3 {
+        margin: 2rem 0 1rem 0;
+        font-size: 1.4rem;
+        color: #fdbb2d; /* Orange accent */
+      }
+
+      /* ====================== MENU ITEMS GRID ====================== */
+      .menu-items {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 1.5rem;
+      }
+
+      /* ====================== ITEM CARD ====================== */
+      .menu-item {
+        background-color: #fff;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s ease;
+      }
+      .menu-item:hover {
+        transform: scale(1.02);
+      }
+
+      .menu-item img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+        display: block;
+      }
+
+      .menu-item-info {
+        padding: 1rem;
+        text-align: center;
+      }
+      .menu-item-info h4 {
+        font-size: 1.1rem;
+        margin-bottom: 0.5rem;
+      }
+      .price {
+        color: #07484a;
+        font-weight: bold;
+        margin-left: 0.5rem;
+      }
+
+      /* ====================== MEDIA QUERIES ====================== */
+      @media (max-width: 768px) {
+        .menu-items {
+          grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+        }
+      }
+      @media (max-width: 480px) {
+        .menu-items {
+          grid-template-columns: 1fr;
+        }
+        .menu-section h2 {
+          font-size: 1.6rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>Tasty & Trails Cafe - Menu</header>
+
+    <main>
+      <!-- ======================== FOOD MENU ======================== -->
+      <section class="menu-section" id="food-menu">
+        <h2>Food Menu</h2>
+
+        <!-- BREAD -->
+        <h3>Bread</h3>
+        <div class="menu-items">
+          <div class="menu-item">
+            <img src="./Garlic Bread.jpg" alt="Garlic Bread" />
+            <div class="menu-item-info">
+              <h4>Garlic Bread <span class="price"> - &#8377;109</span></h4>
+            </div>
+          </div>
+          <div class="menu-item">
+            <img src="./Garlic Cheese Bread.jpg" alt="Garlic Bread Cheese" />
+            <div class="menu-item-info">
+              <h4>
+                Garlic Bread Cheese <span class="price">- &#8377;129</span>
+              </h4>
+            </div>
+          </div>
+        </div>
+
+        <!-- SANDWICH -->
+        <h3>Sandwich</h3>
+        <div class="menu-items">
+          <div class="menu-item">
+            <img
+              src="./Veg Grilled Cheese Sandwich.webp"
+              alt="Veg Cheese Sandwich"
+            />
+            <div class="menu-item-info">
+              <h4>
+                Veg Cheese Sandwich <span class="price">- &#8377;109</span>
+              </h4>
+            </div>
+          </div>
+          <div class="menu-item">
+            <img
+              src="./paneer-tikka sandwich.jpg"
+              alt="Paneer Tikka Sandwich"
+            />
+            <div class="menu-item-info">
+              <h4>
+                Paneer Tikka Sandwich <span class="price">- &#8377;129</span>
+              </h4>
+            </div>
+          </div>
+          <div class="menu-item">
+            <img
+              src="./BBQ-Chicken-Sandwiches.jpg"
+              alt="BBQ Chicken Sandwich"
+            />
+            <div class="menu-item-info">
+              <h4>
+                BBQ Chicken Sandwich <span class="price">- &#8377;149</span>
+              </h4>
+            </div>
+          </div>
+          <div class="menu-item">
+            <img
+              src="./Big chicken cheese sandwish.jpeg"
+              alt="Big Cheese Chicken Sandwich"
+            />
+            <div class="menu-item-info">
+              <h4>
+                Big Cheese Chicken Sandwich
+                <span class="price">- &#8377;169</span>
+              </h4>
+            </div>
+          </div>
+        </div>
+
+        <!-- PIZZA -->
+        <h3>Pizza</h3>
+        <div class="menu-items">
+          <div class="menu-item">
+            <img src="./Gold Corn pizza.avif" alt="Gold Corn Pizza" />
+            <div class="menu-item-info">
+              <h4>Gold Corn Pizza <span class="price">- &#8377;129</span></h4>
+            </div>
+          </div>
+          <div class="menu-item">
+            <img src="./cheese pizza.webp" alt="Cheese Pizza" />
+            <div class="menu-item-info">
+              <h4>Cheese Pizza <span class="price">- &#8377;149</span></h4>
+            </div>
+          </div>
+          <div class="menu-item">
+            <img src="./Paneer-Pizza-.jpg" alt="Paneer Tikka Pizza" />
+            <div class="menu-item-info">
+              <h4>
+                Paneer Tikka Pizza <span class="price">- &#8377;179</span>
+              </h4>
+            </div>
+          </div>
+          <div class="menu-item">
+            <img src="./Veg overload pizza.jpeg" alt="Veg Overloaded Pizza" />
+            <div class="menu-item-info">
+              <h4>
+                Veg Overloaded Pizza <span class="price">- &#8377;189</span>
+              </h4>
+            </div>
+          </div>
+          <div class="menu-item">
+            <img src="./BBQ chicken Pizza.jpeg" alt="BBQ Chicken Pizza" />
+            <div class="menu-item-info">
+              <h4>BBQ Chicken Pizza <span class="price">- &#8377;199</span></h4>
+            </div>
+          </div>
+          <div class="menu-item">
+            <img
+              src="./chicken overload pizza.jpg"
+              alt="Chicken Overloaded Pizza"
+            />
+            <div class="menu-item-info">
+              <h4>
+                Chicken Overloaded Pizza <span class="price">- &#8377;229</span>
+              </h4>
+            </div>
+          </div>
+        </div>
+
+        <!-- FRIES -->
+        <h3>Fries</h3>
+        <div class="menu-items">
+          <div class="menu-item">
+            <img src="./french fries.jpg" alt="French Fries" />
+            <div class="menu-item-info">
+              <h4>French Fries <span class="price">- &#8377;99</span></h4>
+            </div>
+          </div>
+          <div class="menu-item">
+            <img src="./Salted fries.jpg" alt="Salated Fries" />
+            <div class="menu-item-info">
+              <h4>Salated Fries <span class="price">- &#8377;119</span></h4>
+            </div>
+          </div>
+          <div class="menu-item">
+            <img src="./masala friw.jpg" alt="Masala Fries" />
+            <div class="menu-item-info">
+              <h4>Masala Fries <span class="price">- &#8377;129</span></h4>
+            </div>
+          </div>
+        </div>
+
+        <!-- RAMEN -->
+        <h3>Ramen</h3>
+        <div class="menu-items">
+          <div class="menu-item">
+            <img src="./veg ramen.jpeg" alt="Veg Ramen" />
+            <div class="menu-item-info">
+              <h4>Veg Ramen <span class="price">- &#8377;259</span></h4>
+            </div>
+          </div>
+          <div class="menu-item">
+            <img src="./Chicken Ramen.jpg" alt="Chicken Ramen" />
+            <div class="menu-item-info">
+              <h4>Chicken Ramen <span class="price">- &#8377;289</span></h4>
+            </div>
+          </div>
+        </div>
+
+        <!-- PASTA -->
+        <h3>Pasta (Add Non-Veg 30/-)</h3>
+        <div class="menu-items">
+          <div class="menu-item">
+            <img src="./white sause pasta.jpg" alt="White Sauce Pasta" />
+            <div class="menu-item-info">
+              <h4>White Sauce Pasta <span class="price">- &#8377;169</span></h4>
+            </div>
+          </div>
+          <div class="menu-item">
+            <img src="./Red Sauce Pasta.jpg" alt="Red Sauce Pasta" />
+            <div class="menu-item-info">
+              <h4>Red Sauce Pasta <span class="price">- &#8377;189</span></h4>
+            </div>
+          </div>
+          <div class="menu-item">
+            <img src="./combination pasta.webp" alt="Combination Pasta" />
+            <div class="menu-item-info">
+              <h4>Combination Pasta <span class="price">- &#8377;209</span></h4>
+            </div>
+          </div>
+        </div>
+
+        <!-- BURGER -->
+        <h3>Burger</h3>
+        <div class="menu-items">
+          <div class="menu-item">
+            <img src="./veg burger.jpeg" alt="Veg Cheese Burger" />
+            <div class="menu-item-info">
+              <h4>Veg Cheese Burger <span class="price">- &#8377;99</span></h4>
+            </div>
+          </div>
+          <div class="menu-item">
+            <img src="./paneer burger.png" alt="Paneer Tikka Burger" />
+            <div class="menu-item-info">
+              <h4>
+                Paneer Tikka Burger <span class="price">- &#8377;129</span>
+              </h4>
+            </div>
+          </div>
+          <div class="menu-item">
+            <img src="BBQ Chicken burger.jpeg" alt="BBQ Chicken Burger" />
+            <div class="menu-item-info">
+              <h4>
+                BBQ Chicken Burger <span class="price">- &#8377;159</span>
+              </h4>
+            </div>
+          </div>
+          <div class="menu-item">
+            <img
+              src="./big cheese burger.jpeg"
+              alt="Big Cheese Chicken Burger"
+            />
+            <div class="menu-item-info">
+              <h4>
+                Big Cheese Chicken Burger
+                <span class="price">- &#8377;179</span>
+              </h4>
+            </div>
+          </div>
+        </div>
+
+        <!-- MAGGIE -->
+        <h3>Maggie</h3>
+        <div class="menu-items">
+          <div class="menu-item">
+            <img src="./Plain maggi.webp" alt="Plain Maggie" />
+            <div class="menu-item-info">
+              <h4>Plain Maggie <span class="price">- &#8377;99</span></h4>
+            </div>
+          </div>
+          <div class="menu-item">
+            <img src="./Masala-Maggie.jpg" alt="Masala Maggie" />
+            <div class="menu-item-info">
+              <h4>Masala Maggie <span class="price">- &#8377;119</span></h4>
+            </div>
+          </div>
+          <div class="menu-item">
+            <img src="./chicken Maggi.jpg" alt="Chicken Maggie" />
+            <div class="menu-item-info">
+              <h4>Chicken Maggie <span class="price">- &#8377;149</span></h4>
+            </div>
+          </div>
+          <div class="menu-item">
+            <img src="./cheese mah=gii.webp" alt="Cheese Maggie" />
+            <div class="menu-item-info">
+              <h4>Cheese Maggie <span class="price">- &#8377;149</span></h4>
+            </div>
+          </div>
+        </div>
+
+        <!-- TASTY BITES -->
+        <h3>Tasty Bites</h3>
+        <div class="menu-items">
+          <div class="menu-item">
+            <img src="./french fries.jpg" alt="Fries" />
+            <div class="menu-item-info">
+              <h4>Fries <span class="price">- &#8377;99</span></h4>
+            </div>
+          </div>
+          <div class="menu-item">
+            <img src="./chicken popkorn.jpg" alt="Chicken Popcorn" />
+            <div class="menu-item-info">
+              <h4>Chicken Popcorn <span class="price">- &#8377;149</span></h4>
+            </div>
+          </div>
+          <div class="menu-item">
+            <img src="./veg cripsy.jpeg" alt="Crispy Veg" />
+            <div class="menu-item-info">
+              <h4>Crispy Veg <span class="price">- &#8377;149</span></h4>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================== COFFEE SHOP MENU ======================== -->
+      <section class="menu-section" id="coffee-menu">
+        <h2>Coffee Shop Menu</h2>
+
+        <!-- COLD COFFEE -->
+        <h3>Cold Coffee</h3>
+        <div class="menu-items">
+          <div class="menu-item">
+            <img src="./cold coffee.webp" alt="Cold Coffee" />
+            <div class="menu-item-info">
+              <h4>Cold Coffee <span class="price">- &#8377;80</span></h4>
+            </div>
+          </div>
+          <div class="menu-item">
+            <img src="./bourn vita.cms" alt="Cold Bornvita" />
+            <div class="menu-item-info">
+              <h4>Cold Bornvita <span class="price">- &#8377;80</span></h4>
+            </div>
+          </div>
+          <div class="menu-item">
+            <img src="./Latte.jpg" alt="Latte" />
+            <div class="menu-item-info">
+              <h4>Latte <span class="price">- &#8377;100</span></h4>
+            </div>
+          </div>
+          <div class="menu-item">
+            <img src="./Ice Americano.jpeg" alt="Ice Americano" />
+            <div class="menu-item-info">
+              <h4>Ice Americano <span class="price">- &#8377;89</span></h4>
+            </div>
+          </div>
+        </div>
+
+        <!-- TEA -->
+        <h3>Tea</h3>
+        <div class="menu-items">
+          <div class="menu-item">
+            <img src="./Peach Tea.jpg" alt="Peach Tea" />
+            <div class="menu-item-info">
+              <h4>Peach Tea <span class="price">- &#8377;80</span></h4>
+            </div>
+          </div>
+          <div class="menu-item">
+            <img src="./Watermelon Ice Tea.jpeg" alt="Watermelon Ice Tea" />
+            <div class="menu-item-info">
+              <h4>Watermelon Ice Tea <span class="price">- &#8377;80</span></h4>
+            </div>
+          </div>
+          <div class="menu-item">
+            <img src="./Blueberry Ice Tea.jpeg" alt="Blueberry Ice Tea" />
+            <div class="menu-item-info">
+              <h4>Blueberry Ice Tea <span class="price">- &#8377;80</span></h4>
+            </div>
+          </div>
+          <div class="menu-item">
+            <img src="./Mint Tea.jpeg" alt="Mint Tea" />
+            <div class="menu-item-info">
+              <h4>Mint Tea <span class="price">- &#8377;70</span></h4>
+            </div>
+          </div>
+        </div>
+
+        <!-- HOT COFFEE -->
+        <h3>Hot Coffee</h3>
+        <div class="menu-items">
+          <div class="menu-item">
+            <img src="./Hot Coffee.webp" alt="Hot Coffee" />
+            <div class="menu-item-info">
+              <h4>Hot Coffee <span class="price">- &#8377;59</span></h4>
+            </div>
+          </div>
+          <div class="menu-item">
+            <img src="./Black Coffee.jpg" alt="Black Coffee" />
+            <div class="menu-item-info">
+              <h4>Black Coffee <span class="price">- &#8377;50</span></h4>
+            </div>
+          </div>
+          <div class="menu-item">
+            <img src="./Hot Bornvita.jpeg" alt="Hot Bornvita" />
+            <div class="menu-item-info">
+              <h4>Hot Bornvita <span class="price">- &#8377;65</span></h4>
+            </div>
+          </div>
+          <div class="menu-item">
+            <img src="./Tea.jpeg" alt="Tea" />
+            <div class="menu-item-info">
+              <h4>Tea <span class="price">- &#8377;20</span></h4>
+            </div>
+          </div>
+        </div>
+
+        <!-- SHAKES -->
+        <h3>Shakes</h3>
+        <div class="menu-items">
+          <div class="menu-item">
+            <img src="./Chocolate Shake.jpeg" alt="Chocolate Shake" />
+            <div class="menu-item-info">
+              <h4>Chocolate Shake <span class="price">- &#8377;109</span></h4>
+            </div>
+          </div>
+          <div class="menu-item">
+            <img src="./Strawberry Shake.jpg" alt="Strawberry Shake" />
+            <div class="menu-item-info">
+              <h4>Strawberry Shake <span class="price">- &#8377;109</span></h4>
+            </div>
+          </div>
+          <div class="menu-item">
+            <img src="./Blueberry Shake.jpeg" alt="Blueberry Shake" />
+            <div class="menu-item-info">
+              <h4>Blueberry Shake <span class="price">- &#8377;109</span></h4>
+            </div>
+          </div>
+          <div class="menu-item">
+            <img src="./Kit-Kat Shake.jpeg" alt="Kit-Kat Shake" />
+            <div class="menu-item-info">
+              <h4>Kit-Kat Shake <span class="price">- &#8377;129</span></h4>
+            </div>
+          </div>
+        </div>
+
+        <!-- MOJITO -->
+        <h3>Mojito</h3>
+        <div class="menu-items">
+          <div class="menu-item">
+            <img src="./Virgin Mojito.jpg" alt="Virgin Mojito" />
+            <div class="menu-item-info">
+              <h4>Virgin Mojito <span class="price">- &#8377;109</span></h4>
+            </div>
+          </div>
+          <div class="menu-item">
+            <img src="./Watermelon Mojito.jpeg" alt="Watermelon Mojito" />
+            <div class="menu-item-info">
+              <h4>Watermelon Mojito <span class="price">- &#8377;109</span></h4>
+            </div>
+          </div>
+          <div class="menu-item">
+            <img src="./Blueberry Mojito.webp" alt="Blueberry Mojito" />
+            <div class="menu-item-info">
+              <h4>Blueberry Mojito <span class="price">- &#8377;109</span></h4>
+            </div>
+          </div>
+          <div class="menu-item">
+            <img src="./Vanila Mojito.webp" alt="Vanila Mojito" />
+            <div class="menu-item-info">
+              <h4>Vanila Mojito <span class="price">- &#8377;109</span></h4>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
